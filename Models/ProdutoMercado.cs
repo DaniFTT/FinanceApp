@@ -33,7 +33,12 @@ namespace FinanceApp.Models
                 valorUnidade = value;
             }
         }
+        public override double ValorTotal { get => ValorUnidade * Quantidade; }
 
-        public override double ValorTotal { get => valorUnidade * quantidade;}
+        public ProdutoMercado(int produtoId, string produtoNome, int quantidade, double valorUnidade) : base(produtoId, produtoNome)
+        {
+            Quantidade = quantidade;
+            ValorUnidade = valorUnidade;
+        }
     }
 }

@@ -29,9 +29,10 @@ namespace FinanceApp
 
         private void tbControlmenu_Selected(object sender, TabControlEventArgs e)
         {
+            AtualizaTodasListas();
+
             _objForm?.Dispose();
             _objForm?.Controls.Remove(_objForm);
-
 
             if (tbControlmenu.SelectedTab == tbIntegrantes)
             {
@@ -44,7 +45,28 @@ namespace FinanceApp
                 tbControlmenu.SelectedTab.Controls.Add(_objForm);
                 _objForm.Show();
             }
+            else if(tbControlmenu.SelectedTab == tbCadastroProdutoCompras)
+            {
+                Text = "Cadastrar Produto";
+                _objForm = new MercadoAcougueUC
+                {
+                    Dock = DockStyle.Fill
+                };
 
+                tbControlmenu.SelectedTab.Controls.Add(_objForm);
+                _objForm.Show();
+            }
+            else if (tbControlmenu.SelectedTab == tbMercado)
+            {
+                Text = "Lista de Produto";
+                _objForm = new ListagemMercadoAcougue
+                {
+                    Dock = DockStyle.Fill
+                };
+
+                tbControlmenu.SelectedTab.Controls.Add(_objForm);
+                _objForm.Show();
+            }
 
         }
 
@@ -66,6 +88,7 @@ namespace FinanceApp
         public void AtualizaTodasListas()
         {
             Global.integrantes = JsonHandler.ListaDeIntegrantes();
+            Global.produtos = JsonHandler.ListaDeProdutos();
 
         }
 

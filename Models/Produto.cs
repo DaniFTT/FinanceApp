@@ -12,7 +12,6 @@ namespace FinanceApp.Models
         protected double valorTotal;
 
         public int ProdutoId { get; set; }
-        public string Descricao { get; set; }
 
         public string ProdutoNome 
         {
@@ -24,6 +23,12 @@ namespace FinanceApp.Models
 
                 produtoNome = value;
             }     
+        }
+
+        protected Produto(int produtoId, string produtoNome)
+        {
+            ProdutoId = produtoId;
+            ProdutoNome = produtoNome;
         }
 
         public virtual double ValorTotal { get; set; }

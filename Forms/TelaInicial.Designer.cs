@@ -37,6 +37,7 @@ namespace FinanceApp
             this.tbMercado = new System.Windows.Forms.TabPage();
             this.tbGastosCaseiros = new System.Windows.Forms.TabPage();
             this.tbGastosPessoais = new System.Windows.Forms.TabPage();
+            this.tbCadastroProdutoCompras = new System.Windows.Forms.TabPage();
             this.tbControlmenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@ namespace FinanceApp
             this.tbControlmenu.Controls.Add(this.tbInicial);
             this.tbControlmenu.Controls.Add(this.tbIntegrantes);
             this.tbControlmenu.Controls.Add(this.tbRegistrosPagamentos);
+            this.tbControlmenu.Controls.Add(this.tbCadastroProdutoCompras);
             this.tbControlmenu.Controls.Add(this.tbMercado);
             this.tbControlmenu.Controls.Add(this.tbGastosCaseiros);
             this.tbControlmenu.Controls.Add(this.tbGastosPessoais);
@@ -103,7 +105,7 @@ namespace FinanceApp
             this.tbMercado.Name = "tbMercado";
             this.tbMercado.Size = new System.Drawing.Size(912, 490);
             this.tbMercado.TabIndex = 5;
-            this.tbMercado.Text = "Mercado/Açougue";
+            this.tbMercado.Text = "Lista Mercado/Açougue";
             // 
             // tbGastosCaseiros
             // 
@@ -124,13 +126,22 @@ namespace FinanceApp
             this.tbGastosPessoais.Text = "Gastos Pessoais";
             this.tbGastosPessoais.UseVisualStyleBackColor = true;
             // 
+            // tbCadastroProdutoCompras
+            // 
+            this.tbCadastroProdutoCompras.Location = new System.Drawing.Point(4, 22);
+            this.tbCadastroProdutoCompras.Name = "tbCadastroProdutoCompras";
+            this.tbCadastroProdutoCompras.Size = new System.Drawing.Size(912, 490);
+            this.tbCadastroProdutoCompras.TabIndex = 10;
+            this.tbCadastroProdutoCompras.Text = "Cadastrar Produto";
+            this.tbCadastroProdutoCompras.UseVisualStyleBackColor = true;
+            // 
             // TelaInicial
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(926, 583);
             this.Controls.Add(this.tbControlmenu);
             this.DrawerTabControl = this.tbControlmenu;
-            this.DrawerWidth = 220;
+            this.DrawerWidth = 275;
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -152,6 +163,7 @@ namespace FinanceApp
         private System.Windows.Forms.TabPage tbMercado;
         private System.Windows.Forms.TabPage tbGastosCaseiros;
         private System.Windows.Forms.TabPage tbGastosPessoais;
+        private System.Windows.Forms.TabPage tbCadastroProdutoCompras;
     }
 }
 

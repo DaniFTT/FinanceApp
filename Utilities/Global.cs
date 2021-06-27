@@ -10,5 +10,7 @@ namespace FinanceApp.Utilities
     public static class Global
     {
         public static List<Integrante> integrantes;
+        public static List<GastosCasa> gastosCasa;
+        public static List<Produto> produtos;
     }
 }

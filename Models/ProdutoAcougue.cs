@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinanceApp.Models
 {
-    public class ProdutoAçougue : Produto
+    public class ProdutoAcougue : Produto
     {
         private double valorDoKilo;
         private double quantidadeEmKG;
@@ -33,7 +33,13 @@ namespace FinanceApp.Models
                 valorDoKilo = value;
             }
         }
-
         public override double ValorTotal { get => ValorDoKilo * QuantidadeEmKG; }
+
+        public ProdutoAcougue(int produtoId, string produtoNome, double quantidadeEmKG, double valorDoKilo) : base(produtoId, produtoNome)
+        {
+            QuantidadeEmKG = quantidadeEmKG;
+            ValorDoKilo = valorDoKilo;
+        }
+
     }
 }

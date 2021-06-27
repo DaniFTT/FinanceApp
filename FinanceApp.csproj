@@ -65,7 +65,7 @@
     <Compile Include="Models\Integrante.cs" />
     <Compile Include="Models\Interfaces\IGastos.cs" />
     <Compile Include="Models\Produto.cs" />
-    <Compile Include="Models\ProdutoAçougue.cs" />
+    <Compile Include="Models\ProdutoAcougue.cs" />
     <Compile Include="Models\ProdutoMercado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +74,18 @@
     </Compile>
     <Compile Include="UserControls\IntegrantesUC.Designer.cs">
       <DependentUpon>IntegrantesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ListagemMercadoAcougue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ListagemMercadoAcougue.Designer.cs">
+      <DependentUpon>ListagemMercadoAcougue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MercadoAcougueUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MercadoAcougueUC.Designer.cs">
+      <DependentUpon>MercadoAcougueUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities\Global.cs" />
     <Compile Include="Utilities\JsonHandler.cs" />
@@ -91,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\IntegrantesUC.resx">
       <DependentUpon>IntegrantesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ListagemMercadoAcougue.resx">
+      <DependentUpon>ListagemMercadoAcougue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MercadoAcougueUC.resx">
+      <DependentUpon>MercadoAcougueUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
