@@ -10,8 +10,8 @@ namespace FinanceApp.Models
     public class Gastos : IGastos
     {
         public int GastoId { get; set; }
-        public string NomeGasto { get; set; }
-        public string TipoDoGasto { get; set; }
+        public string Descricao { get; set; }
+        public virtual string TipoDoGasto { get; set; }
         public virtual double Valor { get; protected set; }
         public DateTime DataDaTransação { get; set; }
     }

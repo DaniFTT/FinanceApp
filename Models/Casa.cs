@@ -8,13 +8,13 @@ namespace FinanceApp.Models
 {
     public class Casa
     {
-        private double saldoCasa;
-
         public double ValorAluguel { get; set; }
         public double ValorInternet { get; set; }
         public double ValorEnergia { get; set; }
         public int ValorAgua { get; set; }
         public double ValorAlimentação { get; set; }            
+        public double ValorGas{ get; set; }     
+        
         public double SaldoCasa { get; set; }
 
         public List<Produto> ListaDeCompras { get; set; }
@@ -22,16 +22,17 @@ namespace FinanceApp.Models
 
 
 
-        public Casa(double valorEnergia, int valorAgua, double valorAlimentação, double saldoCasa, List<Produto> listaDeCompras, List<Integrante> integrantes)
+
+
+
+        public double CalculaSaldoCasa(List<Integrante> integrantes)
         {
-            ValorAluguel = 600.0;
-            ValorInternet = 130.0;
-            ValorEnergia = valorEnergia;
-            ValorAgua = valorAgua;
-            ValorAlimentação = valorAlimentação;
-            SaldoCasa = saldoCasa;
-            ListaDeCompras = listaDeCompras;
-            Integrantes = integrantes;
+            double valor = 0;
+            foreach (var integrante in integrantes)
+            {
+                valor += integrante.ValorPCasa;
+            }   
+            return valor;
         }
     }
 }

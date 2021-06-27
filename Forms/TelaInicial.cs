@@ -1,4 +1,6 @@
-﻿using MaterialSkin.Controls;
+﻿using FinanceApp.UserControls;
+using FinanceApp.Utilities;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +23,31 @@ namespace FinanceApp
         {
             InitializeComponent();
             InicializaTema();
+            AtualizaTodasListas();
         }
+
+
+        private void tbControlmenu_Selected(object sender, TabControlEventArgs e)
+        {
+            _objForm?.Dispose();
+            _objForm?.Controls.Remove(_objForm);
+
+
+            if (tbControlmenu.SelectedTab == tbIntegrantes)
+            {
+                Text = "Integrantes";
+                _objForm = new IntegrantesUC
+                {
+                    Dock = DockStyle.Fill
+                };
+
+                tbControlmenu.SelectedTab.Controls.Add(_objForm);
+                _objForm.Show();
+            }
+
+
+        }
+
 
         public void InicializaTema()
         {
@@ -34,6 +60,12 @@ namespace FinanceApp
                                                                            MaterialSkin.Primary.Indigo100,
                                                                            MaterialSkin.Accent.Blue100,
                                                                            MaterialSkin.TextShade.WHITE);
+
+        }
+
+        public void AtualizaTodasListas()
+        {
+            Global.integrantes = JsonHandler.ListaDeIntegrantes();
 
         }
 

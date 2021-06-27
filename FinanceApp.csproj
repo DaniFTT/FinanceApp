@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Models\Casa.cs" />
     <Compile Include="Models\Gastos.cs" />
+    <Compile Include="Models\GastosCasa.cs" />
     <Compile Include="Models\GastosPessoais.cs" />
     <Compile Include="Models\Integrante.cs" />
     <Compile Include="Models\Interfaces\IGastos.cs" />
@@ -68,6 +69,14 @@
     <Compile Include="Models\ProdutoMercado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\IntegrantesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\IntegrantesUC.Designer.cs">
+      <DependentUpon>IntegrantesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Global.cs" />
+    <Compile Include="Utilities\JsonHandler.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,6 +88,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\IntegrantesUC.resx">
+      <DependentUpon>IntegrantesUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -94,10 +106,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="User-Interfaces\" />
-    <Folder Include="Utilities\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Assets\img\grafico-de-barras.ico" />
   </ItemGroup>

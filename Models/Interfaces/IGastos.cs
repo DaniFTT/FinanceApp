@@ -9,7 +9,7 @@ namespace FinanceApp.Models.Interfaces
     public interface IGastos
     {
         int GastoId { get; set; }
-        string NomeGasto { get; set; }
+        string Descricao { get; set; }
         string TipoDoGasto { get; set; }
         double Valor { get; }
         DateTime DataDaTransação { get; set; }
