@@ -30,16 +30,17 @@ namespace FinanceApp.UserControls
         private void InitializeComponent()
         {
             this.listViewMercado = new MaterialSkin.Controls.MaterialListView();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.chID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chNome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chValorUnidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chQuantidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.btnExcluirMercado = new MaterialSkin.Controls.MaterialButton();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.lblTotal = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblTotalMercado = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.listViewAcougue = new MaterialSkin.Controls.MaterialListView();
             this.chaID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -47,9 +48,13 @@ namespace FinanceApp.UserControls
             this.chaValorKg = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chaQuantidadeEmKg = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chaTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.btnExcluirAcougue = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblValorAcougue = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
+            this.materialCard2.SuspendLayout();
             this.SuspendLayout();
             // 
             // listViewMercado
@@ -79,30 +84,6 @@ namespace FinanceApp.UserControls
             this.listViewMercado.UseCompatibleStateImageBehavior = false;
             this.listViewMercado.View = System.Windows.Forms.View.Details;
             // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(26, 17);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(102, 19);
-            this.materialLabel1.TabIndex = 50;
-            this.materialLabel1.Text = "Lista Mercado";
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(28, 248);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(102, 19);
-            this.materialLabel2.TabIndex = 51;
-            this.materialLabel2.Text = "Lista Açougue";
-            // 
             // chID
             // 
             this.chID.Text = "ID";
@@ -128,6 +109,30 @@ namespace FinanceApp.UserControls
             this.chTotal.Text = "Total";
             this.chTotal.Width = 88;
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(26, 17);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(102, 19);
+            this.materialLabel1.TabIndex = 50;
+            this.materialLabel1.Text = "Lista Mercado";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(28, 248);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(102, 19);
+            this.materialLabel2.TabIndex = 51;
+            this.materialLabel2.Text = "Lista Açougue";
+            // 
             // btnExcluirMercado
             // 
             this.btnExcluirMercado.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -136,7 +141,7 @@ namespace FinanceApp.UserControls
             this.btnExcluirMercado.Depth = 0;
             this.btnExcluirMercado.HighEmphasis = true;
             this.btnExcluirMercado.Icon = null;
-            this.btnExcluirMercado.Location = new System.Drawing.Point(673, 196);
+            this.btnExcluirMercado.Location = new System.Drawing.Point(674, 196);
             this.btnExcluirMercado.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnExcluirMercado.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnExcluirMercado.Name = "btnExcluirMercado";
@@ -152,7 +157,7 @@ namespace FinanceApp.UserControls
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard1.Controls.Add(this.materialLabel4);
-            this.materialCard1.Controls.Add(this.lblTotal);
+            this.materialCard1.Controls.Add(this.lblTotalMercado);
             this.materialCard1.Controls.Add(this.materialLabel3);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -164,18 +169,31 @@ namespace FinanceApp.UserControls
             this.materialCard1.Size = new System.Drawing.Size(210, 121);
             this.materialCard1.TabIndex = 54;
             // 
-            // lblTotal
+            // materialLabel4
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Depth = 0;
-            this.lblTotal.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblTotal.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.lblTotal.Location = new System.Drawing.Point(69, 66);
-            this.lblTotal.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(122, 41);
-            this.lblTotal.TabIndex = 1;
-            this.lblTotal.Text = "1288,75";
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel4.Location = new System.Drawing.Point(14, 66);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(41, 41);
+            this.materialLabel4.TabIndex = 2;
+            this.materialLabel4.Text = "R$";
+            // 
+            // lblTotalMercado
+            // 
+            this.lblTotalMercado.AutoSize = true;
+            this.lblTotalMercado.Depth = 0;
+            this.lblTotalMercado.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblTotalMercado.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblTotalMercado.Location = new System.Drawing.Point(61, 66);
+            this.lblTotalMercado.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblTotalMercado.Name = "lblTotalMercado";
+            this.lblTotalMercado.Size = new System.Drawing.Size(122, 41);
+            this.lblTotalMercado.TabIndex = 1;
+            this.lblTotalMercado.Text = "1288,75";
             // 
             // materialLabel3
             // 
@@ -183,12 +201,12 @@ namespace FinanceApp.UserControls
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel3.Location = new System.Drawing.Point(43, 14);
+            this.materialLabel3.Location = new System.Drawing.Point(24, 14);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(124, 24);
+            this.materialLabel3.Size = new System.Drawing.Size(159, 24);
             this.materialLabel3.TabIndex = 0;
-            this.materialLabel3.Text = "Valor da Lista";
+            this.materialLabel3.Text = "Valor no Mercado";
             // 
             // listViewAcougue
             // 
@@ -242,19 +260,6 @@ namespace FinanceApp.UserControls
             this.chaTotal.Text = "Total";
             this.chaTotal.Width = 88;
             // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel4.Location = new System.Drawing.Point(14, 66);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(41, 41);
-            this.materialLabel4.TabIndex = 2;
-            this.materialLabel4.Text = "R$";
-            // 
             // btnExcluirAcougue
             // 
             this.btnExcluirAcougue.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -275,9 +280,65 @@ namespace FinanceApp.UserControls
             this.btnExcluirAcougue.UseVisualStyleBackColor = true;
             this.btnExcluirAcougue.Click += new System.EventHandler(this.btnExcluirAcougue_Click);
             // 
+            // materialCard2
+            // 
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialLabel5);
+            this.materialCard2.Controls.Add(this.lblValorAcougue);
+            this.materialCard2.Controls.Add(this.materialLabel7);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(688, 271);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Size = new System.Drawing.Size(210, 121);
+            this.materialCard2.TabIndex = 57;
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel5.Location = new System.Drawing.Point(14, 66);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(41, 41);
+            this.materialLabel5.TabIndex = 2;
+            this.materialLabel5.Text = "R$";
+            // 
+            // lblValorAcougue
+            // 
+            this.lblValorAcougue.AutoSize = true;
+            this.lblValorAcougue.Depth = 0;
+            this.lblValorAcougue.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblValorAcougue.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblValorAcougue.Location = new System.Drawing.Point(61, 66);
+            this.lblValorAcougue.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblValorAcougue.Name = "lblValorAcougue";
+            this.lblValorAcougue.Size = new System.Drawing.Size(122, 41);
+            this.lblValorAcougue.TabIndex = 1;
+            this.lblValorAcougue.Text = "1288,75";
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel7.Location = new System.Drawing.Point(24, 14);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(158, 24);
+            this.materialLabel7.TabIndex = 0;
+            this.materialLabel7.Text = "Valor no Açougue";
+            // 
             // ListagemMercadoAcougue
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.btnExcluirAcougue);
             this.Controls.Add(this.listViewAcougue);
             this.Controls.Add(this.materialCard1);
@@ -286,11 +347,13 @@ namespace FinanceApp.UserControls
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.listViewMercado);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListagemMercadoAcougue";
             this.Size = new System.Drawing.Size(912, 490);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
+            this.materialCard2.ResumeLayout(false);
+            this.materialCard2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,7 +371,7 @@ namespace FinanceApp.UserControls
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialButton btnExcluirMercado;
         private MaterialSkin.Controls.MaterialCard materialCard1;
-        private MaterialSkin.Controls.MaterialLabel lblTotal;
+        private MaterialSkin.Controls.MaterialLabel lblTotalMercado;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialListView listViewAcougue;
         private System.Windows.Forms.ColumnHeader chaID;
@@ -318,5 +381,9 @@ namespace FinanceApp.UserControls
         private System.Windows.Forms.ColumnHeader chaTotal;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialButton btnExcluirAcougue;
+        private MaterialSkin.Controls.MaterialCard materialCard2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialLabel lblValorAcougue;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
     }
 }

@@ -14,7 +14,8 @@ namespace FinanceApp.UserControls
 {
     public partial class ListagemMercadoAcougue : UserControl
     {
-        private double total;
+        private double totalMercado;
+        private double totalAcougue;
         public ListagemMercadoAcougue()
         {
             InitializeComponent();
@@ -27,7 +28,8 @@ namespace FinanceApp.UserControls
             {
                 listViewMercado.Items.Clear();
                 listViewAcougue.Items.Clear();
-                total = 0.0;
+                totalMercado = 0.0;
+                totalAcougue = 0.0;
                 foreach (var produto in Global.produtos)
                 {
                     string[] row;
@@ -40,7 +42,7 @@ namespace FinanceApp.UserControls
                             Tag = produto
                         };
                         listViewMercado.Items.Add(lvi);
-                        total += mercado.ValorTotal;
+                        totalMercado += mercado.ValorTotal;
                     }
                     else if(produto is ProdutoAcougue acougue)
                     {
@@ -50,10 +52,11 @@ namespace FinanceApp.UserControls
                             Tag = produto
                         };
                         listViewAcougue.Items.Add(lvi);
-                        total += acougue.ValorTotal;
+                        totalAcougue += acougue.ValorTotal;
                     }
                 }
-                lblTotal.Text = total.ToString("f2");
+                lblTotalMercado.Text = totalMercado.ToString("f2");
+                lblValorAcougue.Text = totalAcougue.ToString("f2");
             }
         }
 

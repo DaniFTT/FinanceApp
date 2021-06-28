@@ -92,5 +92,9 @@ namespace FinanceApp
 
         }
 
+        private void sfCalendar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

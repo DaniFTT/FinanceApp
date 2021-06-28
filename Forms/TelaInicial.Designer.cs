@@ -34,10 +34,10 @@ namespace FinanceApp
             this.tbInicial = new System.Windows.Forms.TabPage();
             this.tbIntegrantes = new System.Windows.Forms.TabPage();
             this.tbRegistrosPagamentos = new System.Windows.Forms.TabPage();
+            this.tbCadastroProdutoCompras = new System.Windows.Forms.TabPage();
             this.tbMercado = new System.Windows.Forms.TabPage();
             this.tbGastosCaseiros = new System.Windows.Forms.TabPage();
             this.tbGastosPessoais = new System.Windows.Forms.TabPage();
-            this.tbCadastroProdutoCompras = new System.Windows.Forms.TabPage();
             this.tbControlmenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,6 +97,15 @@ namespace FinanceApp
             this.tbRegistrosPagamentos.TabIndex = 4;
             this.tbRegistrosPagamentos.Text = "Registros de Pagamentos";
             // 
+            // tbCadastroProdutoCompras
+            // 
+            this.tbCadastroProdutoCompras.Location = new System.Drawing.Point(4, 22);
+            this.tbCadastroProdutoCompras.Name = "tbCadastroProdutoCompras";
+            this.tbCadastroProdutoCompras.Size = new System.Drawing.Size(912, 490);
+            this.tbCadastroProdutoCompras.TabIndex = 10;
+            this.tbCadastroProdutoCompras.Text = "Cadastrar Produto";
+            this.tbCadastroProdutoCompras.UseVisualStyleBackColor = true;
+            // 
             // tbMercado
             // 
             this.tbMercado.BackColor = System.Drawing.Color.White;
@@ -125,15 +134,6 @@ namespace FinanceApp
             this.tbGastosPessoais.TabIndex = 9;
             this.tbGastosPessoais.Text = "Gastos Pessoais";
             this.tbGastosPessoais.UseVisualStyleBackColor = true;
-            // 
-            // tbCadastroProdutoCompras
-            // 
-            this.tbCadastroProdutoCompras.Location = new System.Drawing.Point(4, 22);
-            this.tbCadastroProdutoCompras.Name = "tbCadastroProdutoCompras";
-            this.tbCadastroProdutoCompras.Size = new System.Drawing.Size(912, 490);
-            this.tbCadastroProdutoCompras.TabIndex = 10;
-            this.tbCadastroProdutoCompras.Text = "Cadastrar Produto";
-            this.tbCadastroProdutoCompras.UseVisualStyleBackColor = true;
             // 
             // TelaInicial
             // 
