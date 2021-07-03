@@ -155,8 +155,6 @@ namespace FinanceApp
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialTabControl tbControlmenu;
         private System.Windows.Forms.TabPage tbInicial;
         private System.Windows.Forms.TabPage tbIntegrantes;
         private System.Windows.Forms.TabPage tbRegistrosPagamentos;
@@ -164,6 +162,7 @@ namespace FinanceApp
         private System.Windows.Forms.TabPage tbGastosCaseiros;
         private System.Windows.Forms.TabPage tbGastosPessoais;
         private System.Windows.Forms.TabPage tbCadastroProdutoCompras;
+        public MaterialSkin.Controls.MaterialTabControl tbControlmenu;
     }
 }
 

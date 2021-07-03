@@ -41,9 +41,10 @@ namespace FinanceApp.UserControls
             this.chId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chNome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chRendaTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.chValorPCasa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.btnExcluir = new MaterialSkin.Controls.MaterialButton();
+            this.chSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnLimpar
@@ -109,7 +110,7 @@ namespace FinanceApp.UserControls
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Depth = 0;
             this.txtId.Enabled = false;
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtId.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtId.LeadingIcon = null;
             this.txtId.Location = new System.Drawing.Point(32, 48);
             this.txtId.MaxLength = 50;
@@ -139,7 +140,7 @@ namespace FinanceApp.UserControls
             // 
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Depth = 0;
-            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtNome.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNome.LeadingIcon = null;
             this.txtNome.Location = new System.Drawing.Point(152, 49);
             this.txtNome.MaxLength = 50;
@@ -168,7 +169,7 @@ namespace FinanceApp.UserControls
             // 
             this.txtRendaTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRendaTotal.Depth = 0;
-            this.txtRendaTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtRendaTotal.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtRendaTotal.LeadingIcon = null;
             this.txtRendaTotal.Location = new System.Drawing.Point(413, 49);
             this.txtRendaTotal.MaxLength = 50;
@@ -189,10 +190,10 @@ namespace FinanceApp.UserControls
             this.chId,
             this.chNome,
             this.chRendaTotal,
-            this.chValorPCasa});
+            this.chValorPCasa,
+            this.chSaldo});
             this.listViewIntegrantes.Depth = 0;
             this.listViewIntegrantes.FullRowSelect = true;
-            this.listViewIntegrantes.GridLines = true;
             this.listViewIntegrantes.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewIntegrantes.HideSelection = false;
             this.listViewIntegrantes.HoverSelection = true;
@@ -216,12 +217,17 @@ namespace FinanceApp.UserControls
             // chNome
             // 
             this.chNome.Text = "Nome";
-            this.chNome.Width = 225;
+            this.chNome.Width = 200;
             // 
             // chRendaTotal
             // 
             this.chRendaTotal.Text = "Renda Total";
-            this.chRendaTotal.Width = 225;
+            this.chRendaTotal.Width = 180;
+            // 
+            // chValorPCasa
+            // 
+            this.chValorPCasa.Text = "Valor p/ Casa";
+            this.chValorPCasa.Width = 180;
             // 
             // materialLabel3
             // 
@@ -235,11 +241,6 @@ namespace FinanceApp.UserControls
             this.materialLabel3.Size = new System.Drawing.Size(213, 29);
             this.materialLabel3.TabIndex = 100;
             this.materialLabel3.Text = "Lista de Integrantes";
-            // 
-            // chValorPCasa
-            // 
-            this.chValorPCasa.Text = "Valor p/ Casa";
-            this.chValorPCasa.Width = 225;
             // 
             // btnExcluir
             // 
@@ -261,6 +262,11 @@ namespace FinanceApp.UserControls
             this.btnExcluir.UseAccentColor = true;
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // chSaldo
+            // 
+            this.chSaldo.Text = "Saldo Atual";
+            this.chSaldo.Width = 115;
             // 
             // IntegrantesUC
             // 
@@ -301,5 +307,6 @@ namespace FinanceApp.UserControls
         private System.Windows.Forms.ColumnHeader chValorPCasa;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialButton btnExcluir;
+        private System.Windows.Forms.ColumnHeader chSaldo;
     }
 }

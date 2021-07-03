@@ -97,5 +97,7 @@ namespace FinanceApp.UserControls
                 MaterialSkin.Controls.MaterialMessageBox.Show("Selecione pelo menos um produto AÇOUGUE para excluir!");
             }
         }
+
+     
     }
 }

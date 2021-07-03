@@ -17,7 +17,7 @@ namespace FinanceApp
     {
 
         public MaterialSkin.MaterialSkinManager materialSkinManager;
-        private UserControl _objForm;
+        public UserControl _objForm;
 
         public TelaInicial()
         {

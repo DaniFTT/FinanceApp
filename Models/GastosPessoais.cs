@@ -12,6 +12,6 @@ namespace FinanceApp.Models
         public bool Mensal { get; set; }    
         public double ValorParcela { get; set; }
         public int Parcelas { get; set; }
-        public override double Valor { get => ValorParcela * Parcelas; }
+        public override double Valor => ValorParcela * Parcelas;
     }
 }

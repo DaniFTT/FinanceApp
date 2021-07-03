@@ -77,6 +77,7 @@ namespace FinanceApp.UserControls
             this.listViewMercado.MinimumSize = new System.Drawing.Size(200, 100);
             this.listViewMercado.MouseLocation = new System.Drawing.Point(-1, -1);
             this.listViewMercado.MouseState = MaterialSkin.MouseState.OUT;
+            this.listViewMercado.MultiSelect = false;
             this.listViewMercado.Name = "listViewMercado";
             this.listViewMercado.OwnerDraw = true;
             this.listViewMercado.Size = new System.Drawing.Size(638, 193);
@@ -97,17 +98,17 @@ namespace FinanceApp.UserControls
             // chValorUnidade
             // 
             this.chValorUnidade.Text = "Valor Unidade";
-            this.chValorUnidade.Width = 130;
+            this.chValorUnidade.Width = 125;
             // 
             // chQuantidade
             // 
             this.chQuantidade.Text = "Quantidade";
-            this.chQuantidade.Width = 120;
+            this.chQuantidade.Width = 110;
             // 
             // chTotal
             // 
             this.chTotal.Text = "Total";
-            this.chTotal.Width = 88;
+            this.chTotal.Width = 103;
             // 
             // materialLabel1
             // 
@@ -161,7 +162,7 @@ namespace FinanceApp.UserControls
             this.materialCard1.Controls.Add(this.materialLabel3);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(688, 39);
+            this.materialCard1.Location = new System.Drawing.Point(674, 39);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
@@ -228,6 +229,7 @@ namespace FinanceApp.UserControls
             this.listViewAcougue.MinimumSize = new System.Drawing.Size(200, 100);
             this.listViewAcougue.MouseLocation = new System.Drawing.Point(-1, -1);
             this.listViewAcougue.MouseState = MaterialSkin.MouseState.OUT;
+            this.listViewAcougue.MultiSelect = false;
             this.listViewAcougue.Name = "listViewAcougue";
             this.listViewAcougue.OwnerDraw = true;
             this.listViewAcougue.Size = new System.Drawing.Size(638, 193);
@@ -248,7 +250,7 @@ namespace FinanceApp.UserControls
             // chaValorKg
             // 
             this.chaValorKg.Text = "Valor em KG";
-            this.chaValorKg.Width = 130;
+            this.chaValorKg.Width = 110;
             // 
             // chaQuantidadeEmKg
             // 
@@ -258,7 +260,7 @@ namespace FinanceApp.UserControls
             // chaTotal
             // 
             this.chaTotal.Text = "Total";
-            this.chaTotal.Width = 88;
+            this.chaTotal.Width = 108;
             // 
             // btnExcluirAcougue
             // 
@@ -288,7 +290,7 @@ namespace FinanceApp.UserControls
             this.materialCard2.Controls.Add(this.materialLabel7);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(688, 271);
+            this.materialCard2.Location = new System.Drawing.Point(674, 271);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";

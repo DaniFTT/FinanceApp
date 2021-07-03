@@ -84,7 +84,7 @@ namespace FinanceApp.UserControls
 
         private void AdicionaItemList(Integrante integrante)
         {
-            var row = new string[] { integrante.Id.ToString(), integrante.Nome, integrante.RendaTotal.ToString("f2"), integrante.ValorPCasa.ToString("f2") };
+            var row = new string[] { integrante.Id.ToString(), integrante.Nome, integrante.RendaTotal.ToString("f2"), integrante.ValorPCasa.ToString("f2"), integrante.SaldoAtual.ToString("f2") };
 
             var lvi = new ListViewItem(row)
             {
